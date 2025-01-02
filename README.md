@@ -153,8 +153,8 @@ In this part, you'll explore the database and answer key questions that the maga
 1. **Hygiene Score of 20**:
    - Find establishments with a hygiene score of 20 and display the first document in the results:
      ```python
-     hygiene_20 = establishments.find({"scores.Hygiene": 20})
-     print(f"Number of establishments with hygiene score 20: {hygiene_20.count_documents({})}")
+     hygiene_20_count = establishments.count_documents({"scores.Hygiene": 20})
+     print(f"Number of establishments with hygiene score 20: {hygiene_20_count}")
      pprint(hygiene_20[0])
      ```
 
